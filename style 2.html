@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Company Title | Professional Cleaning Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1a1a1a",
+                        "accent": "#c5a358",
+                        "background-light": "#faf9f6",
+                        "background-dark": "#121212",
+                    },
+                    fontFamily: {
+                        "serif": ["Cormorant Garamond", "serif"],
+                        "sans": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        html { scroll-behavior: smooth; }
+        section[id] { scroll-margin-top: 5rem; }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+        .text-vertical {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: reveal 1s ease forwards;
+        }
+        @keyframes reveal {
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-sans text-slate-900 dark:text-slate-100 selection:bg-accent/30">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<header class="relative flex items-center justify-between px-6 md:px-12 py-8 sticky top-0 z-50 mix-blend-difference invert dark:invert-0">
+<a href="style 2.html" class="flex items-center gap-2">
+<h2 class="text-2xl font-serif italic tracking-tight">Company Title</h2>
+</a>
+<div class="flex items-center gap-12">
+<nav class="hidden md:flex items-center gap-10">
+<details class="group relative">
+<summary class="list-none cursor-pointer flex items-center gap-1 text-[11px] uppercase tracking-[0.2em] font-medium hover:text-accent transition-colors">
+Services <span class="material-symbols-outlined text-sm transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="absolute top-full left-0 mt-2 py-3 min-w-[200px] bg-background-light dark:bg-background-dark border border-slate-200 dark:border-slate-700 shadow-lg flex flex-col z-50 invert dark:invert-0">
+<a class="px-6 py-2 text-[11px] uppercase tracking-[0.2em] font-medium hover:bg-primary/5 hover:text-accent transition-colors" href="service-1.html">Service 1</a>
+<a class="px-6 py-2 text-[11px] uppercase tracking-[0.2em] font-medium hover:bg-primary/5 hover:text-accent transition-colors" href="service-2.html">Service 2</a>
+<a class="px-6 py-2 text-[11px] uppercase tracking-[0.2em] font-medium hover:text-accent transition-colors" href="service-3.html">Service 3</a>
+</div>
+</details>
+<a class="text-[11px] uppercase tracking-[0.2em] font-medium hover:text-accent transition-colors" href="#about">About</a>
+<a class="text-[11px] uppercase tracking-[0.2em] font-medium hover:text-accent transition-colors" href="#testimonials">Reviews</a>
+<a class="text-[11px] uppercase tracking-[0.2em] font-medium hover:text-accent transition-colors" href="#contact">Contact</a>
+</nav>
+<details class="md:hidden group">
+<summary class="list-none cursor-pointer px-4 py-2 flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] font-medium">
+<span class="material-symbols-outlined text-xl">menu</span> Menu
+</summary>
+<div class="absolute top-full right-6 mt-2 py-4 px-6 bg-background-light dark:bg-background-dark border border-slate-200 dark:border-slate-700 shadow-lg flex flex-col gap-4 min-w-[180px] z-50">
+<div class="text-[10px] uppercase tracking-[0.2em] font-bold text-accent mb-1">Services</div>
+<a class="text-[11px] uppercase tracking-[0.2em] font-medium hover:text-accent transition-colors pl-2" href="service-1.html">Service 1</a>
+<a class="text-[11px] uppercase tracking-[0.2em] font-medium hover:text-accent transition-colors pl-2" href="service-2.html">Service 2</a>
+<a class="text-[11px] uppercase tracking-[0.2em] font-medium hover:text-accent transition-colors pl-2" href="service-3.html">Service 3</a>
+<a class="text-[11px] uppercase tracking-[0.2em] font-medium hover:text-accent transition-colors" href="#about">About</a>
+<a class="text-[11px] uppercase tracking-[0.2em] font-medium hover:text-accent transition-colors" href="#testimonials">Reviews</a>
+<a class="text-[11px] uppercase tracking-[0.2em] font-medium hover:text-accent transition-colors" href="#contact">Contact</a>
+<a class="text-[11px] uppercase tracking-[0.2em] font-medium hover:text-accent transition-colors pt-2 border-t border-slate-200 dark:border-slate-700" href="#contact">Get a Quote</a>
+</div>
+</details>
+<a href="#contact" class="px-8 py-3 bg-primary text-white text-[11px] uppercase tracking-[0.2em] font-bold hover:bg-accent transition-all duration-500 inline-block">
+                    Get a Quote
+                </a>
+</div>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<section id="home" class="relative min-h-[90vh] flex items-center px-6 md:px-12 py-20 overflow-hidden">
+<div class="container mx-auto editorial-grid h-full items-center">
+<div class="col-span-12 lg:col-span-7 z-20 order-2 lg:order-1 mt-12 lg:mt-0">
+<span class="text-accent uppercase tracking-[0.3em] text-[10px] mb-6 block font-semibold">[Your tagline or category]</span>
+<h1 class="text-primary dark:text-white text-6xl md:text-[7vw] font-serif leading-[0.9] mb-8">
+                            [Headline line 1] <br/>
+<span class="italic">[Headline line 2]</span>
+</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg md:text-xl font-light leading-relaxed max-w-lg mb-10">
+                            [Brief intro paragraph—describe your company and what you offer. 1–2 sentences.]
+                        </p>
+<div class="flex items-center gap-8">
+<a href="#services" class="group flex items-center gap-4 text-[11px] uppercase tracking-[0.25em] font-bold border-b border-primary dark:border-white pb-2 hover:border-accent transition-all">
+                                Explore Services
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-5 relative order-1 lg:order-2">
+<div class="aspect-[4/5] bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-1000 shadow-2xl relative z-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAte_2QrdifId-y0ZwyWeFc8fIlHVss7tdtwex0GnZFzicO4ddld-H8oGYLRTJYySy5e53SOuzbytan8JKn4Zpn5OBNybGo0ovop6C7SRoMGXT2NJA527KJGgoWQ0LGYlSWSDGYNBl0w2SLso0RmEEBCAyBW7wetkJY73BxWQnCchql1w68tb_1JNttBZ9sHl-DccCXJa5pIvTWXatMmm9JmAM4tdQ1o6SWh1-n_HPDrP9WQ7gLD9B4Bd-4BwivLbMW2ERd_CXhxNo");'>
+</div>
+<div class="absolute -bottom-10 -left-10 w-full h-full border border-accent/20 -z-0 hidden lg:block"></div>
+</div>
+</div>
+</section>
+<!-- Statement Section -->
+<section id="about" class="py-32 bg-white dark:bg-background-dark border-y border-slate-100 dark:border-slate-800">
+<div class="container mx-auto px-6 md:px-12 text-center">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-3xl md:text-6xl font-serif leading-tight text-primary dark:text-white">
+                            "[Company quote or mission statement. 1–2 sentences about your values or approach.]"
+                        </h2>
+<div class="mt-16 flex justify-center">
+<div class="w-px h-32 bg-accent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-40 bg-background-light dark:bg-background-dark overflow-hidden">
+<div class="container mx-auto px-6 md:px-12">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-24 border-b border-primary/5 dark:border-white/5 pb-12">
+<h2 class="text-5xl md:text-8xl font-serif">Why Choose <br/><span class="italic">Us</span></h2>
+<p class="max-w-xs text-sm uppercase tracking-widest opacity-60 font-light mt-8 md:mt-0">[Short subtitle for this section—e.g., reasons customers trust you.]</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24">
+<div class="group">
+<span class="material-symbols-outlined text-accent text-4xl mb-8 font-light">verified_user</span>
+<h3 class="text-2xl font-serif mb-6 italic">[Benefit 1 Title]</h3>
+<p class="text-slate-500 dark:text-slate-400 font-light leading-relaxed">[Benefit 1 description—e.g., trusted, insured, background-checked staff.]</p>
+</div>
+<div class="group">
+<span class="material-symbols-outlined text-accent text-4xl mb-8 font-light">schedule</span>
+<h3 class="text-2xl font-serif mb-6 italic">[Benefit 2 Title]</h3>
+<p class="text-slate-500 dark:text-slate-400 font-light leading-relaxed">[Benefit 2 description—e.g., flexible scheduling, reliable service.]</p>
+</div>
+<div class="group">
+<span class="material-symbols-outlined text-accent text-4xl mb-8 font-light">eco</span>
+<h3 class="text-2xl font-serif mb-6 italic">[Benefit 3 Title]</h3>
+<p class="text-slate-500 dark:text-slate-400 font-light leading-relaxed">[Benefit 3 description—e.g., eco-friendly products, quality guarantee.]</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Overview: Asymmetrical Grid -->
+<section id="services" class="py-40 bg-white dark:bg-[#0f0f0f]">
+<div class="container mx-auto px-6 md:px-12">
+<div class="editorial-grid gap-12 lg:gap-0">
+<div class="col-span-12 lg:col-span-5 lg:pr-24 self-center mb-16 lg:mb-0">
+<span class="text-accent uppercase tracking-[0.4em] text-[10px] mb-6 block font-bold">Our Services</span>
+<h2 class="text-5xl md:text-7xl font-serif mb-8 italic">[Services <br/>Section Title]</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg font-light leading-relaxed mb-12">[Brief intro to your services. 1–2 sentences.]</p>
+<a href="#contact" class="inline-block px-10 py-4 border border-primary dark:border-white text-[11px] uppercase tracking-widest font-bold hover:bg-primary hover:text-white transition-all">Get a Free Quote</a>
+</div>
+<div class="col-span-12 lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-px bg-slate-100 dark:bg-white/5">
+<a href="service-1.html" class="bg-white dark:bg-[#0f0f0f] p-12 lg:p-16 hover:bg-background-light dark:hover:bg-primary transition-colors block">
+<span class="text-[10px] font-bold tracking-widest text-accent mb-4 block">01</span>
+<h3 class="text-2xl font-serif mb-6 italic">Service 1</h3>
+<p class="text-sm opacity-70 font-light leading-loose">[Brief description of Service 1. 1–2 sentences.]</p>
+</a>
+<a href="service-2.html" class="bg-white dark:bg-[#0f0f0f] p-12 lg:p-16 hover:bg-background-light dark:hover:bg-primary transition-colors md:mt-12 block">
+<span class="text-[10px] font-bold tracking-widest text-accent mb-4 block">02</span>
+<h3 class="text-2xl font-serif mb-6 italic">Service 2</h3>
+<p class="text-sm opacity-70 font-light leading-loose">[Brief description of Service 2. 1–2 sentences.]</p>
+</a>
+<a href="service-3.html" class="bg-white dark:bg-[#0f0f0f] p-12 lg:p-16 hover:bg-background-light dark:hover:bg-primary transition-colors block">
+<span class="text-[10px] font-bold tracking-widest text-accent mb-4 block">03</span>
+<h3 class="text-2xl font-serif mb-6 italic">Service 3</h3>
+<p class="text-sm opacity-70 font-light leading-loose">[Brief description of Service 3. 1–2 sentences.]</p>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-40 bg-background-light dark:bg-background-dark">
+<div class="container mx-auto px-6 md:px-12">
+<div class="max-w-5xl mx-auto">
+<div class="flex flex-col items-center mb-24 text-center">
+<h2 class="text-5xl md:text-7xl font-serif italic mb-6">[Process Section Title]</h2>
+<div class="w-24 h-px bg-accent"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+<div class="relative px-8">
+<span class="text-[120px] font-serif italic absolute -top-16 -left-4 opacity-5 pointer-events-none">I</span>
+<h4 class="text-accent uppercase tracking-widest text-xs font-bold mb-6">Step 1</h4>
+<h3 class="text-2xl font-serif mb-4">[Process Step 1 Title]</h3>
+<p class="text-sm opacity-60 font-light leading-relaxed">[Process Step 1 description—e.g., get a quote, request estimate.]</p>
+</div>
+<div class="relative px-8">
+<span class="text-[120px] font-serif italic absolute -top-16 -left-4 opacity-5 pointer-events-none">II</span>
+<h4 class="text-accent uppercase tracking-widest text-xs font-bold mb-6">Step 2</h4>
+<h3 class="text-2xl font-serif mb-4">[Process Step 2 Title]</h3>
+<p class="text-sm opacity-60 font-light leading-relaxed">[Process Step 2 description—e.g., schedule your appointment.]</p>
+</div>
+<div class="relative px-8">
+<span class="text-[120px] font-serif italic absolute -top-16 -left-4 opacity-5 pointer-events-none">III</span>
+<h4 class="text-accent uppercase tracking-widest text-xs font-bold mb-6">Step 3</h4>
+<h3 class="text-2xl font-serif mb-4">[Process Step 3 Title]</h3>
+<p class="text-sm opacity-60 font-light leading-relaxed">[Process Step 3 description—e.g., enjoy the results.]</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features: Editorial Grid (Original) -->
+<section class="py-32 bg-white dark:bg-background-dark">
+<div class="container mx-auto px-6 md:px-12">
+<div class="editorial-grid gap-12 lg:gap-24 items-start">
+<div class="col-span-12 lg:col-span-5 flex flex-col gap-12">
+<div class="relative group">
+<div class="aspect-square mb-8 overflow-hidden">
+<img alt="Professional detail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuA6Fpai_HCPVGcV3JEqDe2Uf4wYy--mQHZMPPnjOFRn3VmDRwIKe4t3MimzwR8QS3MU9iCibvgAy6b27oaTyzWgpZkVJlUumHajARY6jREt5ovEMDDhfFaV63-3XuuWPxb9hsQI6qppWarvFO8ekan9HXmaX_orc9X15k7sn7cQnaYrCezPsBnx_HDfbb3M6v3TKJMXsBkQQ6YLaCOVq1vPODObQKFJhk0iB9Bef8ureRRxCjl1MeYd1JS4IFWNAOyav4-KSoGAo"/>
+</div>
+<span class="text-[10px] uppercase tracking-widest text-accent font-bold mb-4 block">01 / [Feature 1]</span>
+<h3 class="text-3xl font-serif mb-4">[Feature 1 Title]</h3>
+<p class="text-slate-600 dark:text-slate-400 font-light leading-relaxed">
+                                    [Feature 1 description—e.g., trusted, insured, professional staff.]
+                                </p>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-5 lg:mt-48 flex flex-col gap-12">
+<div class="relative group">
+<div class="aspect-square mb-8 overflow-hidden">
+<img alt="Eco cleaning" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjqKmyYK-mKpXG_qlnllWRZkYxg3_wPp9CpKFjuOCzHk1QcRWBNqteONfFSxcvNT5yYGttjkwBrKfBq8X-q2umHv0qXf6B8JtCv91ThAwpSIMto7RKuvuQpN1ipNQMKjni8_N3Va1z_SPlH6dvHJQCPhcVanX9BU0rimecLSXrzzwtbl1KYliL7ai_rcte6uxxLr9mHpoWuLotSyVNjlAY_dssqUyYfKGPOm2mTwIcggX-L3njMnFFi8_zuSYiDNOEMCvlbP7YhzY"/>
+</div>
+<span class="text-[10px] uppercase tracking-widest text-accent font-bold mb-4 block">02 / [Feature 2]</span>
+<h3 class="text-3xl font-serif mb-4">[Feature 2 Title]</h3>
+<p class="text-slate-600 dark:text-slate-400 font-light leading-relaxed">
+                                    [Feature 2 description—e.g., eco-friendly products, quality guarantee.]
+                                </p>
+</div>
+</div>
+<div class="hidden lg:block lg:col-span-2 self-center">
+<div class="text-[10px] font-bold uppercase tracking-[0.5em] rotate-90 whitespace-nowrap opacity-30">
+                                COMPANY TITLE © 2024
+                            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section id="testimonials" class="py-32 bg-primary text-white overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-accent/5 -skew-x-12"></div>
+<div class="container mx-auto px-6 md:px-12 relative z-10">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20">
+<h2 class="text-5xl md:text-7xl font-serif leading-none italic">[Testimonials <br/>Section Title]</h2>
+<div class="hidden md:flex gap-4">
+<button class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-accent hover:border-accent transition-all">
+<span class="material-symbols-outlined font-light">west</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-accent hover:border-accent transition-all">
+<span class="material-symbols-outlined font-light">east</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<div class="flex flex-col gap-8 border-l border-white/10 pl-8">
+<p class="text-2xl font-light italic leading-relaxed opacity-80">
+                                "[Testimonial 1 quote—customer feedback about your service.]"
+                            </p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-accent"></div>
+<div>
+<p class="text-[11px] uppercase tracking-widest font-bold">[Customer Name 1]</p>
+<p class="text-[10px] opacity-50 uppercase tracking-widest mt-1">[Customer Title/Service]</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-8 border-l border-white/10 pl-8">
+<p class="text-2xl font-light italic leading-relaxed opacity-80">
+                                "[Testimonial 2 quote—customer feedback about your service.]"
+                            </p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-accent"></div>
+<div>
+<p class="text-[11px] uppercase tracking-widest font-bold">[Customer Name 2]</p>
+<p class="text-[10px] opacity-50 uppercase tracking-widest mt-1">[Customer Title/Service]</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Inquiry/Concierge Section -->
+<section id="contact" class="py-40 bg-white dark:bg-background-dark relative overflow-hidden">
+<div class="container mx-auto px-6 md:px-12">
+<div class="editorial-grid">
+<div class="col-span-12 lg:col-span-6 lg:col-start-4 text-center">
+<h2 class="text-6xl md:text-8xl font-serif italic mb-10">Get a Quote</h2>
+<p class="text-lg opacity-60 font-light mb-16 max-w-lg mx-auto leading-relaxed">
+                                [Contact section intro—e.g., Ready to get started? Fill out the form and we'll respond within 24 hours.]
+                            </p>
+<form class="space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="relative border-b border-primary/20 dark:border-white/20 pb-4">
+<input class="w-full bg-transparent border-none focus:ring-0 text-[11px] uppercase tracking-widest p-0 placeholder:text-slate-400" placeholder="Full Name" type="text"/>
+</div>
+<div class="relative border-b border-primary/20 dark:border-white/20 pb-4">
+<input class="w-full bg-transparent border-none focus:ring-0 text-[11px] uppercase tracking-widest p-0 placeholder:text-slate-400" placeholder="Email Address" type="email"/>
+</div>
+</div>
+<div class="relative border-b border-primary/20 dark:border-white/20 pb-4">
+<select class="w-full bg-transparent border-none focus:ring-0 text-[11px] uppercase tracking-widest p-0 text-slate-400 appearance-none">
+<option>Select a Service</option>
+<option>Service 1</option>
+<option>Service 2</option>
+<option>Service 3</option>
+</select>
+</div>
+<div class="relative border-b border-primary/20 dark:border-white/20 pb-4">
+<textarea class="w-full bg-transparent border-none focus:ring-0 text-[11px] uppercase tracking-widest p-0 placeholder:text-slate-400 resize-none" placeholder="Message / Specific Requirements" rows="4"></textarea>
+</div>
+<button class="w-full py-6 bg-primary text-white text-[11px] uppercase tracking-[0.3em] font-bold hover:bg-accent transition-all duration-700">
+                                    Request Free Quote
+                                </button>
+</form>
+<div class="mt-20 flex flex-col md:flex-row justify-center items-center gap-12 opacity-80">
+<a href="tel:+15551234567" class="flex items-center gap-4 hover:text-accent transition-colors">
+<span class="material-symbols-outlined text-sm font-light">call</span>
+<span class="text-[10px] uppercase tracking-widest font-bold">[Your Phone Number]</span>
+</a>
+<a href="mailto:hello@company.com" class="flex items-center gap-4 hover:text-accent transition-colors">
+<span class="material-symbols-outlined text-sm font-light">mail</span>
+<span class="text-[10px] uppercase tracking-widest font-bold">[Your Email Address]</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-background-light dark:bg-[#0a0a0a] text-primary dark:text-slate-300 px-6 md:px-12 py-24 border-t border-slate-200 dark:border-white/5">
+<div class="container mx-auto">
+<div class="editorial-grid gap-12">
+<div class="col-span-12 lg:col-span-4">
+<h2 class="text-2xl font-serif italic mb-8">Company Title</h2>
+<p class="text-sm font-light leading-relaxed max-w-xs opacity-70">
+                            [Company description for footer—brief tagline or about text.]
+                        </p>
+</div>
+<div class="col-span-6 md:col-span-3 lg:col-span-2">
+<h4 class="text-[10px] uppercase tracking-[0.3em] font-bold mb-8 text-accent">Services</h4>
+<ul class="flex flex-col gap-4 text-[11px] uppercase tracking-wider font-medium opacity-60">
+<li><a class="hover:text-accent transition-colors" href="service-1.html">Service 1</a></li>
+<li><a class="hover:text-accent transition-colors" href="service-2.html">Service 2</a></li>
+<li><a class="hover:text-accent transition-colors" href="service-3.html">Service 3</a></li>
+</ul>
+</div>
+<div class="col-span-6 md:col-span-3 lg:col-span-2">
+<h4 class="text-[10px] uppercase tracking-[0.3em] font-bold mb-8 text-accent">Company</h4>
+<ul class="flex flex-col gap-4 text-[11px] uppercase tracking-wider font-medium opacity-60">
+<li><a class="hover:text-accent transition-colors" href="#about">About Us</a></li>
+<li><a class="hover:text-accent transition-colors" href="#services">Our Services</a></li>
+<li><a class="hover:text-accent transition-colors" href="#testimonials">Reviews</a></li>
+<li><a class="hover:text-accent transition-colors" href="#contact">Contact</a></li>
+</ul>
+</div>
+<div class="col-span-12 lg:col-span-4">
+<h4 class="text-[10px] uppercase tracking-[0.3em] font-bold mb-8 text-accent">Newsletter</h4>
+<p class="text-xs font-light mb-6 opacity-70">[Newsletter signup description—e.g., Get tips and offers delivered to your inbox.]</p>
+<div class="flex border-b border-primary/20 dark:border-white/20 pb-2">
+<input class="bg-transparent border-none w-full px-0 py-2 text-xs focus:ring-0 placeholder:text-slate-400" placeholder="Email address" type="email"/>
+<button class="text-accent hover:translate-x-1 transition-transform">
+<span class="material-symbols-outlined">north_east</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-24 pt-8 border-t border-slate-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] uppercase tracking-[0.2em] font-medium opacity-50">
+<p>© 2024 Company Title. All rights reserved.</p>
+<div class="flex gap-10">
+<a class="hover:text-accent" href="#contact">Contact</a>
+<a class="hover:text-accent" href="#services">Services</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
